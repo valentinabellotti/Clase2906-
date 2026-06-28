@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulador F1 — APEX Sim-Racing Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700&family=Barlow+Condensed:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="formula1.css" />
+</head>
+<body>
+ 
+  <!-- ── PROGRESS BAR ── -->
+  <div class="f1-progress" aria-hidden="true">
+    <div class="f1-progress__fill" id="progressFill"></div>
+  </div>
+ 
+  <!-- ── NAVBAR ── -->
+  <nav class="f1-nav" aria-label="Navegación principal">
+    <div class="f1-nav__inner">
+      <a href="index.html" class="f1-nav__logo">APEX</a>
+      <a href="index.html#cursos" class="f1-nav__back">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <polyline points="10,3 5,8 10,13" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
+        </svg>
+        Volver
+      </a>
+    </div>
+  </nav>
+ 
+  <!-- ══════════════════════════════════════
+       01 — HERO
+  ══════════════════════════════════════ -->
+  <section class="f1-hero" aria-label="Hero Fórmula 1">
+    <div class="f1-hero__media">
+      <img src="assets/img/formula hero2.png" alt="Piloto de Fórmula 1" class="f1-hero__img" />
+      <div class="f1-hero__overlay"></div>
+    </div>
+ 
+    <div class="f1-hero__content">
+      <p class="f1-hero__eyebrow">
+        <span class="f1-hero__eyebrow-square" aria-hidden="true"></span>
+      </p>
+      <h1 class="f1-hero__title">
+       ENTRENÁ COMO UN<br>PILOTO DE F1
+      </h1>
+      <p class="f1-hero__sub">Un entrenamiento diseñado para quienes buscan<br>competir con mayor precisión, confianza y consistencia.</p>
+      <a href="#el-auto" class="f1-cta">
+        Entrá al programa
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <polyline points="3,7 11,7 M7,3 11,7 7,11" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
+        </svg>
+      </a>
+    </div>
+ 
+    <!-- Telemetry badge -->
+    <div class="f1-hero__badge" aria-hidden="true">
+      <span class="f1-hero__badge-label">LAP TIME</span>
+      <span class="f1-hero__badge-time">1:21.046</span>
+      <span class="f1-hero__badge-sector">S3 <span class="accent">▲ 0.3s</span></span>
+    </div>
+ 
+    <div class="f1-hero__scroll" aria-hidden="true">
+      <div class="f1-hero__scroll-line"></div>
+      <span>SCROLL</span>
+    </div>
+  </section>
+ 
+  <!-- ══════════════════════════════════════
+       02 — EL AUTO
+  ══════════════════════════════════════ -->
+  <section class="f1-car" id="el-auto" aria-label="El auto de Fórmula 1">
+    <div class="f1-car__container">
+ 
+      <div class="f1-car__header">
+        <p class="f1-eyebrow">
+          <span class="f1-eyebrow-square" aria-hidden="true"></span>
+          02 — El auto
+        </p>
+        <h2 class="f1-section-title">Descubrí como son<br><em>nuestros simuladores</em></h2>
+      </div>
+ 
+      <div class="f1-car__stage">
+        <!-- Imagen del auto con hotspots -->
+        <div class="f1-car__visual">
+          <img src="assets/img/simuladorf1.png" alt="Auto de Fórmula 1" class="f1-car__img" />
+ 
+          <!-- Hotspots -->
+          <button class="f1-hotspot active" data-spot="0" style="top:28%;left:18%;" aria-label="Downforce">
+            <span class="f1-hotspot__dot"></span>
+            <span class="f1-hotspot__label">Downforce</span>
+          </button>
+          <button class="f1-hotspot" data-spot="1" style="top:55%;left:30%;" aria-label="Frenada">
+            <span class="f1-hotspot__dot"></span>
+            <span class="f1-hotspot__label">Frenada</span>
+          </button>
+          <button class="f1-hotspot" data-spot="2" style="top:35%;left:50%;" aria-label="Dirección">
+            <span class="f1-hotspot__dot"></span>
+            <span class="f1-hotspot__label">Dirección</span>
+          </button>
+          <button class="f1-hotspot" data-spot="3" style="top:18%;left:72%;" aria-label="DRS">
+            <span class="f1-hotspot__dot"></span>
+            <span class="f1-hotspot__label">DRS</span>
+          </button>
+          <button class="f1-hotspot" data-spot="4" style="top:60%;left:68%;" aria-label="Tracción">
+            <span class="f1-hotspot__dot"></span>
+            <span class="f1-hotspot__label">Tracción</span>
+          </button>
+          <button class="f1-hotspot" data-spot="5" style="top:75%;left:48%;" aria-label="Neumáticos">
+            <span class="f1-hotspot__dot"></span>
+            <span class="f1-hotspot__label">Neumáticos</span>
+          </button>
+        </div>
+ 
+        <!-- Panel de info -->
+        <div class="f1-car__info">
+          <div class="f1-car__info-panel active" data-panel="0">
+            <p class="f1-car__info-num">01</p>
+            <h3 class="f1-car__info-title">Downforce</h3>
+            <p class="f1-car__info-text">El alerón delantero genera hasta 1.000 kg de carga aerodinámica a alta velocidad. Aprendés a gestionar la velocidad de entrada a curva en función del agarre disponible.</p>
+          </div>
+          <div class="f1-car__info-panel" data-panel="1">
+            <p class="f1-car__info-num">02</p>
+            <h3 class="f1-car__info-title">Frenada</h3>
+            <p class="f1-car__info-text">Los frenos de carbono trabajan a más de 1.000°C. Trabajamos trail braking, punto de frenada y modulación de presión para ganar décimas en cada zona de freno.</p>
+          </div>
+          <div class="f1-car__info-panel" data-panel="2">
+            <p class="f1-car__info-num">03</p>
+            <h3 class="f1-car__info-title">Dirección</h3>
+            <p class="f1-car__info-text">El volante de un F1 tiene más de 20 controles. Entrenás la coordinación entre inputs de dirección y el volante real calibrado para replicar el feedback de pista.</p>
+          </div>
+          <div class="f1-car__info-panel" data-panel="3">
+            <p class="f1-car__info-num">04</p>
+            <h3 class="f1-car__info-title">DRS</h3>
+            <p class="f1-car__info-text">El Drag Reduction System reduce la resistencia aerodinámica en rectas. Aprendés cuándo y cómo activarlo para maximizar la velocidad punta sin sacrificar estabilidad.</p>
+          </div>
+          <div class="f1-car__info-panel" data-panel="4">
+            <p class="f1-car__info-num">05</p>
+            <h3 class="f1-car__info-title">Tracción</h3>
+            <p class="f1-car__info-text">La salida de curva es donde se gana o se pierde la vuelta. Trabajamos el punto de aceleración, la progresión del gas y cómo leer el grip disponible en cada metro.</p>
+          </div>
+          <div class="f1-car__info-panel" data-panel="5">
+            <p class="f1-car__info-num">06</p>
+            <h3 class="f1-car__info-title">Neumáticos</h3>
+            <p class="f1-car__info-text">Gestionar la temperatura y la degradación de los compuestos es una habilidad avanzada. Aprendés a sentir el comportamiento del neumático y ajustar tu estilo de manejo en carrera.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ══════════════════════════════════════
+       03 — LA VUELTA
+  ══════════════════════════════════════ -->
+  <section class="f1-lap" id="la-vuelta" aria-label="Una vuelta perfecta en Monza">
+    <div class="f1-lap__sticky">
+      <div class="f1-lap__track-wrap" aria-hidden="true">
+        <svg class="f1-lap__svg" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Trazado simplificado de Monza -->
+          <path class="f1-lap__path-bg" d="M 100 300 L 600 300 Q 700 300 700 200 L 700 150 Q 700 80 620 80 L 500 80 Q 440 80 440 140 L 440 180 Q 440 220 380 220 L 300 220 Q 240 220 240 160 L 240 120 Q 240 60 180 60 L 140 60 Q 80 60 80 120 L 80 260 Q 80 300 100 300 Z"/>
+          <path class="f1-lap__path-active" id="lapPath" d="M 100 300 L 600 300 Q 700 300 700 200 L 700 150 Q 700 80 620 80 L 500 80 Q 440 80 440 140 L 440 180 Q 440 220 380 220 L 300 220 Q 240 220 240 160 L 240 120 Q 240 60 180 60 L 140 60 Q 80 60 80 120 L 80 260 Q 80 300 100 300 Z"/>
+          <!-- Punto móvil -->
+          <circle class="f1-lap__car" id="lapCar" cx="100" cy="300" r="7"/>
+        </svg>
+      </div>
+ 
+      <div class="f1-lap__info">
+        <p class="f1-eyebrow">
+          <span class="f1-eyebrow-square" aria-hidden="true"></span>
+          03 — La vuelta
+        </p>
+        <h2 class="f1-section-title">Viví una<br><em>vuelta perfecta</em></h2>
+        <p class="f1-lap__circuit">Monza — Autodromo Nazionale</p>
+ 
+        <div class="f1-lap__sectors">
+          <div class="f1-lap__sector active" data-sector="0">
+            <span class="f1-lap__sector-num">S1</span>
+            <div>
+              <p class="f1-lap__sector-name">Rettifilo — Variante del Rettifilo</p>
+              <p class="f1-lap__sector-desc">Máxima velocidad punta. Activación de DRS. Frenada tardía al límite del agarre.</p>
+            </div>
+          </div>
+          <div class="f1-lap__sector" data-sector="1">
+            <span class="f1-lap__sector-num">S2</span>
+            <div>
+              <p class="f1-lap__sector-name">Curva Grande — Lesmo 1 y 2</p>
+              <p class="f1-lap__sector-desc">Trazada de alta velocidad. Comprensión del understeering y gestión de carga aerodinámica.</p>
+            </div>
+          </div>
+          <div class="f1-lap__sector" data-sector="2">
+            <span class="f1-lap__sector-num">S3</span>
+            <div>
+              <p class="f1-lap__sector-name">Variante Ascari — Parabolica</p>
+              <p class="f1-lap__sector-desc">Trail braking al máximo. La salida de Parabolica define el tiempo de vuelta completo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- Scroll triggers -->
+    <div class="f1-lap__triggers">
+      <div class="f1-lap__trigger" data-trigger="0"></div>
+      <div class="f1-lap__trigger" data-trigger="1"></div>
+      <div class="f1-lap__trigger" data-trigger="2"></div>
+    </div>
+  </section>
+ 
+  <!-- ══════════════════════════════════════
+       04 — DASHBOARD DE HABILIDADES
+  ══════════════════════════════════════ -->
+  <section class="f1-skills" id="habilidades" aria-label="Dashboard de habilidades">
+    <div class="f1-skills__container">
+      <div class="f1-skills__header">
+        <p class="f1-eyebrow">
+          <span class="f1-eyebrow-square" aria-hidden="true"></span>
+          04 — Habilidades
+        </p>
+        <h2 class="f1-section-title">Lo que vas a<br><em>poder desarrollar</em></h2>
+      </div>
+ 
+      <div class="f1-skills__grid">
+        <div class="f1-skill" data-skill>
+          <div class="f1-skill__head">
+            <span class="f1-skill__name">Precisión</span>
+            <span class="f1-skill__val">94%</span>
+          </div>
+          <div class="f1-skill__track">
+            <div class="f1-skill__fill" style="--target: 94%"></div>
+          </div>
+          <p class="f1-skill__desc">Repetición exacta de trazadas y puntos de frenada vuelta tras vuelta.</p>
+        </div>
+        <div class="f1-skill" data-skill>
+          <div class="f1-skill__head">
+            <span class="f1-skill__name">Consistencia</span>
+            <span class="f1-skill__val">88%</span>
+          </div>
+          <div class="f1-skill__track">
+            <div class="f1-skill__fill" style="--target: 88%"></div>
+          </div>
+          <p class="f1-skill__desc">Tiempos estables en tandas largas bajo presión competitiva.</p>
+        </div>
+        <div class="f1-skill" data-skill>
+          <div class="f1-skill__head">
+            <span class="f1-skill__name">Trail Braking</span>
+            <span class="f1-skill__val">79%</span>
+          </div>
+          <div class="f1-skill__track">
+            <div class="f1-skill__fill" style="--target: 79%"></div>
+          </div>
+          <p class="f1-skill__desc">Técnica avanzada de frenada que maximiza la velocidad de entrada a curva.</p>
+        </div>
+        <div class="f1-skill" data-skill>
+          <div class="f1-skill__head">
+            <span class="f1-skill__name">Racing Line</span>
+            <span class="f1-skill__val">91%</span>
+          </div>
+          <div class="f1-skill__track">
+            <div class="f1-skill__fill" style="--target: 91%"></div>
+          </div>
+          <p class="f1-skill__desc">Dominio de la trayectoria óptima en cada tipo de curva y combinación.</p>
+        </div>
+        <div class="f1-skill" data-skill>
+          <div class="f1-skill__head">
+            <span class="f1-skill__name">Gestión de neumáticos</span>
+            <span class="f1-skill__val">72%</span>
+          </div>
+          <div class="f1-skill__track">
+            <div class="f1-skill__fill" style="--target: 72%"></div>
+          </div>
+          <p class="f1-skill__desc">Lectura del degradado y adaptación del estilo para alargar la vida del compuesto.</p>
+        </div>
+        <div class="f1-skill" data-skill>
+          <div class="f1-skill__head">
+            <span class="f1-skill__name">Control del acelerador</span>
+            <span class="f1-skill__val">85%</span>
+          </div>
+          <div class="f1-skill__track">
+            <div class="f1-skill__fill" style="--target: 85%"></div>
+          </div>
+          <p class="f1-skill__desc">Progresión suave y decisiva del gas desde el ápice hasta la recta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ══════════════════════════════════════
+       05 — UNA SESIÓN
+  ══════════════════════════════════════ -->
+ <section class="f1-session" id="la-sesion" aria-label="Cómo es una sesión">
+  <div class="f1-session__container">
+
+    <div class="f1-session__header">
+      <p class="f1-eyebrow">
+        <span class="f1-eyebrow-square" aria-hidden="true"></span>
+        05 — La sesión
+      </p>
+      <h2 class="f1-section-title">Así es<br><em>una sesión</em></h2>
+    </div>
+
+    <div class="f1-session__layout">
+
+      <div class="f1-session__timeline">
+        <div class="f1-session__line-track">
+          <div class="f1-session__line-fill" id="sessionFill"></div>
+        </div>
+
+        <div class="f1-session__step active" data-step="0">
+          <div class="f1-session__step-dot"></div>
+          <div class="f1-session__step-content">
+            <span class="f1-session__step-num">01</span>
+            <h3 class="f1-session__step-name">Briefing y configuración</h3>
+            <p class="f1-session__step-desc">El instructor define los objetivos basándose en datos anteriores. Se configura circuito, condiciones y reglaje del auto.</p>
+          </div>
+        </div>
+
+        <div class="f1-session__step" data-step="1">
+          <div class="f1-session__step-dot"></div>
+          <div class="f1-session__step-content">
+            <span class="f1-session__step-num">02</span>
+            <h3 class="f1-session__step-name">Primera tanda</h3>
+            <p class="f1-session__step-desc">Tanda de vueltas con foco en los puntos trabajados. El instructor observa en tiempo real desde afuera.</p>
+          </div>
+        </div>
+
+        <div class="f1-session__step" data-step="2">
+          <div class="f1-session__step-dot"></div>
+          <div class="f1-session__step-content">
+            <span class="f1-session__step-num">03</span>
+            <h3 class="f1-session__step-name">Análisis de telemetría</h3>
+            <p class="f1-session__step-desc">Revisión vuelta por vuelta. Se identifican zonas de pérdida de tiempo con precisión de milisegundos.</p>
+          </div>
+        </div>
+
+        <div class="f1-session__step" data-step="3">
+          <div class="f1-session__step-dot"></div>
+          <div class="f1-session__step-content">
+            <span class="f1-session__step-num">04</span>
+            <h3 class="f1-session__step-name">Segunda tanda</h3>
+            <p class="f1-session__step-desc">Nueva tanda aplicando las correcciones. El objetivo es validar la mejora con datos reales comparables.</p>
+          </div>
+        </div>
+
+        <div class="f1-session__step" data-step="4">
+          <div class="f1-session__step-dot"></div>
+          <div class="f1-session__step-content">
+            <span class="f1-session__step-num">05</span>
+            <h3 class="f1-session__step-name">Conclusiones</h3>
+            <p class="f1-session__step-desc">Overlay de telemetría tanda 1 vs tanda 2. Reporte escrito con objetivos para la próxima sesión.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="f1-session__visual">
+        <div class="f1-session__img-wrap">
+          <img class="f1-session__img active" data-img="0" src="assets/img/skills1.png" alt="Briefing y configuración" />
+          <img class="f1-session__img" data-img="1" src="assets/img/skills4.png" alt="Primera tanda" />
+          <img class="f1-session__img" data-img="2" src="assets/img/skills5.png" alt="Análisis de telemetría" />
+          <img class="f1-session__img" data-img="3" src="assets/img/skills7.png" alt="Segunda tanda" />
+          <img class="f1-session__img" data-img="4" src="assets/img/skills9.png" alt="Conclusiones" />
+        </div>
+        <div class="f1-session__data" aria-hidden="true">
+          <span class="f1-session__data-label">Session time</span>
+          <span class="f1-session__data-val" id="sessionTimer">00:00:00</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <section class="pricing" id="precios-f1" aria-label="Planes del programa de Fórmula 1">
+ 
+  <div class="pricing__container">
+ 
+    <div class="pricing__header">
+      <div class="pricing__eyebrow">
+        <span class="pricing__eyebrow-square" aria-hidden="true"></span>
+        <span class="pricing__eyebrow-text">Programa Fórmula 1</span>
+      </div>
+      <h2 class="pricing__title">Elegí tu <span class="pricing__title--accent">plan de entrenamiento</span></h2>
+      <p class="pricing__desc">
+        Tres formas de entrenar el programa de Fórmula 1, según cuánto tiempo
+        tengas y cómo te guste entrenar: solo, en grupo, o con seguimiento personal completo.
+      </p>
+    </div>
+ 
+    <div class="pricing__grid">
+ 
+      <!-- INDIVIDUAL -->
+      <article class="pricing-card">
+        <div class="pricing-card__head">
+          <h3 class="pricing-card__name">Individual</h3>
+          <p class="pricing-card__tagline">Para entrenar a tu ritmo</p>
+        </div>
+ 
+        <div class="pricing-card__price">
+          <span class="pricing-card__price-amount">USD 129</span>
+          <span class="pricing-card__price-period">/ programa</span>
+        </div>
+ 
+        <ul class="pricing-card__features">
+          <li><svg class="pricing-card__check" viewBox="0 0 16 16"><path d="M3 8.5L6.2 11.5L13 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>4 sesiones de simulación (60 min)</li>
+          <li><svg class="pricing-card__check" viewBox="0 0 16 16"><path d="M3 8.5L6.2 11.5L13 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>1 circuito a elección</li>
+          <li><svg class="pricing-card__check" viewBox="0 0 16 16"><path d="M3 8.5L6.2 11.5L13 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>Telemetría básica por sesión</li>
+          <li><svg class="pricing-card__check" viewBox="0 0 16 16"><path d="M3 8.5L6.2 11.5L13 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>Acceso a la plataforma por 30 días</li>
+          <li><svg class="pricing-card__check" viewBox="0 0 16 16"><path d="M3 8.5L6.2 11.5L13 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>Soporte por email</li>
+        </ul>
+ 
+        <a href="#" class="pricing-card__cta">Empezar</a>
+      </article>
+ 
+      <!-- PRO — destacado -->
+      <div class="pricing-card--featured-wrap">
+        <span class="pricing-card__badge">Más elegido</span>
+        <article class="pricing-card pricing-card--featured">
+        <div class="pricing-card__inner">
+          <div class="pricing-card__head">
+            <h3 class="pricing-card__name">Pro</h3>
+            <p class="pricing-card__tagline">El programa completo</p>
+          </div>
+ 
+          <div class="pricing-card__price">
+            <span class="pricing-card__price-amount">USD 399</span>
+            <span class="pricing-card__price-period">/ programa</span>
+          </div>
+ 
+          <ul class="pricing-card__features">
+            <li><svg class="pricing-card__check" viewBox="0 0 16 16"><path d="M3 8.5L6.2 11.5L13 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>Acceso a los 4 circuitos</li>
+            <li><svg class="pricing-card__check" viewBox="0 0 16 16"><path d="M3 8.5L6.2 11.5L13 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>12 sesiones de simulación guiada</li>
+            <li><svg class="pricing-card__check" viewBox="0 0 16 16"><path d="M3 8.5L6.2 11.5L13 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>Instructor personal (1 a 1)</li>
+            <li><svg class="pricing-card__check" viewBox="0 0 16 16"><path d="M3 8.5L6.2 11.5L13 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>Telemetría avanzada vuelta a vuelta</li>
+            <li><svg class="pricing-card__check" viewBox="0 0 16 16"><path d="M3 8.5L6.2 11.5L13 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>Plan de entrenamiento a medida</li>
+            <li><svg class="pricing-card__check" viewBox="0 0 16 16"><path d="M3 8.5L6.2 11.5L13 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>Certificado de finalización</li>
+            <li><svg class="pricing-card__check" viewBox="0 0 16 16"><path d="M3 8.5L6.2 11.5L13 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>Soporte prioritario</li>
+          </ul>
+ 
+          <a href="#" class="pricing-card__cta pricing-card__cta--featured">Quiero el Pro</a>
+        </div>
+        </article>
+      </div>
+ 
+      <!-- GRUPAL -->
+      <article class="pricing-card">
+        <div class="pricing-card__head">
+          <h3 class="pricing-card__name">Grupal</h3>
+          <p class="pricing-card__tagline">Entrená en equipo</p>
+        </div>
+ 
+        <div class="pricing-card__price">
+          <span class="pricing-card__price-amount">USD 179</span>
+          <span class="pricing-card__price-period">/ programa</span>
+        </div>
+ 
+        <ul class="pricing-card__features">
+          <li><svg class="pricing-card__check" viewBox="0 0 16 16"><path d="M3 8.5L6.2 11.5L13 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>6 sesiones grupales (hasta 4 pilotos)</li>
+          <li><svg class="pricing-card__check" viewBox="0 0 16 16"><path d="M3 8.5L6.2 11.5L13 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>2 circuitos a elección</li>
+          <li><svg class="pricing-card__check" viewBox="0 0 16 16"><path d="M3 8.5L6.2 11.5L13 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>Telemetría comparada del grupo</li>
+          <li><svg class="pricing-card__check" viewBox="0 0 16 16"><path d="M3 8.5L6.2 11.5L13 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>Briefing técnico grupal</li>
+          <li><svg class="pricing-card__check" viewBox="0 0 16 16"><path d="M3 8.5L6.2 11.5L13 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>Acceso a la comunidad</li>
+        </ul>
+ 
+        <a href="#" class="pricing-card__cta">Armar grupo</a>
+      </article>
+ 
+    </div>
+ 
+  </div>
+</section>
+
+ 
+  <!-- ══════════════════════════════════════
+       06 — CIERRE
+  ══════════════════════════════════════ -->
+  <section class="f1-close" aria-label="Cierre">
+    <div class="f1-close__media">
+      <img src="assets/img/imgfinal.png" alt="Piloto en cockpit" class="f1-close__img"/>
+      <div class="f1-close__overlay"></div>
+    </div>
+    <div class="f1-close__content">
+      <h2 class="f1-close__title">Tu siguiente<br>vuelta empieza acá</h2>
+      <a href="#contacto" class="f1-cta f1-cta--large">
+        Reservá tu sesión
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <polyline points="3,7 11,7 M7,3 11,7 7,11" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+ 
+<script src="formula1.js"></script>
+</body>
+</html>

@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>APEX Sim-Racing Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════════ -->
+  <header class="navbar" role="banner">
+    <div class="navbar__inner">
+
+      <a href="#" class="navbar__logo" aria-label="APEX — Ir al inicio">APEX</a>
+
+      <nav class="navbar__nav" id="primary-nav" aria-label="Navegación principal">
+        <ul class="navbar__list" role="list">
+          <li><a href="#que-es-apex" class="navbar__link">Qué es Apex</a></li>
+           <li><a href="#evolucion" class="navbar__link">Evolución</a></li>
+          <li><a href="#como-entrenamos" class="navbar__link">Cómo entrenamos</a></li>
+          <li><a href="#cursos" class="navbar__link">Cursos</a></li>
+          <li><a href="#circuitos" class="navbar__link">Circuitos y categorías</a></li>
+          <li><a href="#testimonios" class="navbar__link">Testimonios</a></li>
+          <li><a href="#rendimiento-datos" class="navbar__link">Estadísticas</a></li>
+          <li><a href="#contacto" class="navbar__link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <button
+        class="navbar__hamburger"
+        id="hamburger-btn"
+        aria-controls="primary-nav"
+        aria-expanded="false"
+        aria-label="Abrir menú de navegación"
+      >
+        <span class="navbar__hamburger-bar"></span>
+        <span class="navbar__hamburger-bar"></span>
+        <span class="navbar__hamburger-bar"></span>
+      </button>
+
+    </div>
+  </header>
+
+<!-- ═══════════════════════════════════════
+       HERO
+  ════════════════════════════════════════ -->
+  <section class="hero" aria-label="Hero — APEX Sim-Racing Academy">
+
+    <div class="hero__media" aria-hidden="true">
+      <video
+        class="hero__video"
+        src="assets/video/video hero ultimo.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+      ></video>
+      <div class="hero__overlay hero__overlay--dark"></div>
+      <div class="hero__overlay hero__overlay--tint"></div>
+    </div>
+
+    <div class="hero__rule hero__rule--top" aria-hidden="true"></div>
+    <div class="hero__rule hero__rule--left" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow" aria-hidden="true">
+        <span class="hero__eyebrow-dot"></span>
+      </p>
+
+      <h1 class="hero__title">
+        <span class="hero__title-line hero__title-line--1">LA PRÓXIMA VUELTA</span>
+        <span class="hero__title-line hero__title-line--2">EMPIEZA AHORA</span>
+      </h1>
+
+      <p class="hero__subtitle">
+        La próxima generación de pilotos se forma a través de<br class="hero__br" />
+        simulación, telemetría y análisis de rendimiento.
+      </p>
+
+      <a href="#cursos" class="hero__cta" role="button">
+        COMENZAR ENTRENAMIENTO
+      </a>
+    </div>
+
+    <p class="hero__geo" aria-label="Coordenadas: 34 grados sur, 58 grados oeste">
+      34°41'&thinsp;S &nbsp;/&nbsp; 58°27'&thinsp;W
+    </p>
+
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span class="hero__scroll-line"></span>
+    </div>
+
+    <div class="hero__stats" aria-hidden="true">
+      <span class="hero__stats-label">LAP TIME</span>
+      <span class="hero__stats-time">01:32.871</span>
+      <span class="hero__stats-label">SECTOR 1</span>
+      <span class="hero__stats-sector">+0.218</span>
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       NEXT SECTION PEEK
+  ════════════════════════════════════════ -->
+  <section class="section-peek" aria-label="Sección siguiente"></section>
+
+  <!-- ═══════════════════════════════════════
+       ABOUT — QUÉ ES APEX
+  ════════════════════════════════════════ -->
+  <section class="about" id="que-es-apex" aria-label="Dónde nace el rendimiento">
+
+    <div class="about__track-texture" aria-hidden="true">
+      <img src="assets/img/fondo-blanco.png" alt="" />
+    </div>
+
+    <div class="about__grid">
+
+      <div class="about__image-block">
+        <div class="about__image-frame">
+          <img
+            class="about__image"
+            src="assets/img/IMG SECCION1.png"
+            alt="Piloto en simulador de alta performance APEX"
+            width="680"
+            height="860"
+          />
+        </div>
+        <p class="about__image-label" aria-hidden="true">
+          <span>SIM · RIG · 01</span>
+          <span>Buenos Aires, ARG</span>
+        </p>
+      </div>
+
+      <div class="about__content">
+        <div class="about__watermark" aria-hidden="true">PRECISION</div>
+
+        <p class="about__eyebrow">
+          <span class="about__eyebrow-dot"></span>
+          Sobre la academia
+        </p>
+
+        <h2 class="about__title">DÓNDE NACE EL <span class="about__title--accent">RENDIMIENTO</span></h2>
+
+        <p class="about__body">
+          APEX Sim-Racing Academy es un centro de entrenamiento de alto
+          rendimiento orientado a pilotos que buscan una evolución real y el aprendizaje de los mejores profesionales.
+        </p>
+
+        <div class="about__features" role="list">
+
+          <div class="about__feature" role="listitem">
+            <div class="about__feature-stripe" aria-hidden="true"></div>
+            <p class="about__feature-label">SIMULACIÓN</p>
+            <p class="about__feature-desc">
+              Rigs profesionales calibrados a los estándares de la categoría.
+              Hardware de precisión, sin concesiones.
+            </p>
+          </div>
+
+          <div class="about__feature" role="listitem">
+            <div class="about__feature-stripe" aria-hidden="true"></div>
+            <p class="about__feature-label">TELEMETRÍA</p>
+            <p class="about__feature-desc">
+              Análisis de datos en tiempo real por vuelta. Identificamos
+              décimas con lógica de ingeniería de pista.
+            </p>
+          </div>
+
+          <div class="about__feature" role="listitem">
+            <div class="about__feature-stripe" aria-hidden="true"></div>
+            <p class="about__feature-label">PERFORMANCE</p>
+            <p class="about__feature-desc">
+              Programas de desarrollo individualizados que aceleran la curva
+              de aprendizaje del piloto.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  
+
+<!-- ===========================================================
+     PILOT EVOLUTION
+=========================================================== -->
+<section class="pilot-evolution" id="pilot-evolution">
+  <div class="pilot-evolution__bg"></div>
+  <div class="pilot-evolution__container">
+<div class="pilot-evolution__header">
+      <div class="pilot-evolution__eyebrow">
+        <span class="pilot-evolution__dot"></span>
+        <span>CASOS DE ÉXITO</span>
+      </div>
+      <h2 class="pilot-evolution__title">
+        <span class="pilot-evolution__title-big">
+          DE AFICIONADO
+        </span>
+        <span class="pilot-evolution__title-accent">
+          A TIEMPOS DE PODIO
+        </span>
+      </h2>
+      <p class="pilot-evolution__intro">
+        Analizamos la evolución real de un piloto de nuestra academia. A través de datos crudos y corrección milimétrica, transformamos vicios en pista en décimas ganadas al cronómetro.
+      </p>
+    </div>
+
+    <div class="pilot-evolution__grid">
+
+      <article class="report-card">
+        <div class="report-card__image">
+          <img src="assets/img/evolucion1.png" alt="Diagnóstico inicial en simulador">
+          <div class="report-card__overlay">
+            <span>STAGE 01</span>
+            <span>SCAN INICIAL</span>
+          </div>
+        </div>
+        <div class="report-card__content">
+          <div class="report-card__number">01</div>
+          <h3>Diagnóstico en frío</h3>
+          <p>
+            Llegó con vicios de karting: frenado tardío pero inestable, bloqueos crónicos en curvas lentas y un exceso de corrección en el volante que sobrecalentaba las gomas delanteras.
+          </p>
+          <div class="report-card__result">
+            <div>
+              <span>CONSISTENCIA</span>
+              <strong>62%</strong>
+            </div>
+            <div>
+              <span>BLOQUEOS / VTA</span>
+              <strong>4.2</strong>
+            </div>
+            <div>
+              <span>BEST LAP</span>
+              <strong>1:48.321</strong>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="report-card">
+        <div class="report-card__image">
+          <img src="assets/img/evolucion2.png" alt="Análisis de telemetría de frenado">
+          <div class="report-card__overlay">
+            <span>STAGE 02</span>
+            <span>TELEMETRÍA CRUDA</span>
+          </div>
+        </div>
+        <div class="report-card__content">
+          <div class="report-card__number">02</div>
+          <h3>Aislación del error</h3>
+          <p>
+            Cruzamos sus datos con la vuelta ideal. Identificamos que soltaba el freno muy rápido (sin Trail Braking), lo que desestabilizaba la trompa del auto en la transición al vértice de la curva.
+          </p>
+          <div class="report-card__result">
+            <div>
+              <span>TRAIL BRAKE</span>
+              <strong>38%</strong>
+            </div>
+            <div>
+              <span>DELTA ERROR</span>
+              <strong>-1.82s</strong>
+            </div>
+            <div>
+              <span>OVERSTEER</span>
+              <strong>ALTO</strong>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="report-card">
+        <div class="report-card__image">
+          <img src="assets/img/evolucion3.png" alt="Entrenamiento en pista o simulación avanzada">
+          <div class="report-card__overlay">
+            <span>STAGE 03</span>
+            <span>RE-PROGRAMACIÓN</span>
+          </div>
+        </div>
+        <div class="report-card__content">
+          <div class="report-card__number">03</div>
+          <h3>Mecanización técnica</h3>
+          <p>
+            Aplicamos 12 sesiones de enfoque único: modular la presión de frenado del 100% al 5% de forma progresiva. El piloto aprendió a meter el auto usando el peso dinámico, eliminando correcciones.
+          </p>
+          <div class="report-card__result">
+            <div>
+              <span>PRECISIÓN INPUT</span>
+              <strong>89%</strong>
+            </div>
+            <div>
+              <span>HORAS PISTA</span>
+              <strong>48H</strong>
+            </div>
+            <div>
+              <span>REPETICIONES</span>
+              <strong>140+</strong>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="report-card">
+        <div class="report-card__image">
+          <img src="assets/img/evolucion4.png" alt="Piloto con tiempos de podio">
+          <div class="report-card__overlay">
+            <span>FINAL REPORT</span>
+            <span>APEX CERTIFIED</span>
+          </div>
+        </div>
+        <div class="report-card__content">
+          <div class="report-card__number">04</div>
+          <h3>Rendimiento PRO</h3>
+          <p>
+            El resultado es indiscutible. No solo pulverizó su mejor vuelta, sino que su ritmo de carrera se volvió plano e hiper-consistente. Ahora pelea los tiempos de punta de la categoría.
+          </p>
+          <div class="report-card__result">
+            <div>
+              <span>CONSISTENCIA GENERAL</span>
+              <strong>62% <small>→</small> 94%</strong>
+            </div>
+            <div>
+              <span>TIEMPO EN MONZA (PRO)</span>
+              <strong>1:48.321 <small>→</small> 1:45.590</strong>
+            </div>
+            <div>
+              <span>REDUCCIÓN DE TIEMPO</span>
+              <strong class="delta">-2.731s</strong>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="training-method" id="como-entrenamos">
+  <!-- patrón de fondo (bandera a cuadros) -->
+  <div class="training-method__pattern" aria-hidden="true"></div>
+ 
+  <div class="training-method__container">
+ 
+    <div class="eyebrow">
+      <span class="eyebrow__dot" aria-hidden="true"></span>
+      <span class="eyebrow__text">SISTEMA DE TRABAJO</span>
+    </div>
+ 
+    <h2 class="training-method__title">Cómo <span class="training-method__title--accent">entrenamos</span></h2>
+ 
+    <p class="training-method__desc">
+      Cada sesión combina simulación, análisis de datos y entrenamiento personalizado
+      para mejorar el rendimiento del piloto.
+    </p>
+ 
+    <div class="steps-grid">
+ 
+      <!-- 01 — número fantasma -->
+      <div class="cell cell--n1">
+        <span class="ghost-number">01</span>
+      </div>
+ 
+      <!-- 02 — tarjeta -->
+      <div class="cell cell--c2">
+        <article class="step-card">
+          <div class="step-card__inner">
+            <div class="step-card__head">
+              <span class="step-card__marks" aria-hidden="true">////</span>
+              <span class="step-card__num">02</span>
+            </div>
+            <h3 class="step-card__title">Analizá</h3>
+            <p class="step-card__desc">Interpretá cada vuelta a través de telemetría y datos de rendimiento.</p>
+          </div>
+        </article>
+      </div>
+ 
+      <!-- 03 — número fantasma -->
+      <div class="cell cell--n3">
+        <span class="ghost-number">03</span>
+      </div>
+ 
+      <!-- 04 — tarjeta -->
+      <div class="cell cell--c4">
+        <article class="step-card">
+          <div class="step-card__inner">
+            <div class="step-card__head">
+              <span class="step-card__marks" aria-hidden="true">////</span>
+              <span class="step-card__num">04</span>
+            </div>
+            <h3 class="step-card__title">Evolucioná</h3>
+            <p class="step-card__desc">Aplicá los cambios, medí el progreso y llevá tu rendimiento al siguiente nivel.</p>
+          </div>
+        </article>
+      </div>
+ 
+      <!-- 01 — tarjeta -->
+      <div class="cell cell--c1">
+        <article class="step-card">
+          <div class="step-card__inner">
+            <div class="step-card__head">
+              <span class="step-card__marks" aria-hidden="true">////</span>
+              <span class="step-card__num">01</span>
+            </div>
+            <h3 class="step-card__title">Simulá</h3>
+            <p class="step-card__desc">Entrená en entornos diseñados para replicar las condiciones reales de competición.</p>
+          </div>
+        </article>
+      </div>
+ 
+      <!-- 02 — número fantasma -->
+      <div class="cell cell--n2">
+        <span class="ghost-number">02</span>
+      </div>
+ 
+      <!-- 03 — tarjeta -->
+      <div class="cell cell--c3">
+        <article class="step-card">
+          <div class="step-card__inner">
+            <div class="step-card__head">
+              <span class="step-card__marks" aria-hidden="true">////</span>
+              <span class="step-card__num">03</span>
+            </div>
+            <h3 class="step-card__title">Ajustá</h3>
+            <p class="step-card__desc">Perfeccioná trazadas, frenadas y puntos de aceleración con precisión.</p>
+          </div>
+        </article>
+      </div>
+ 
+      <!-- 04 — número fantasma -->
+      <div class="cell cell--n4">
+        <span class="ghost-number">04</span>
+      </div>
+ 
+    </div>
+    <!-- /.steps-grid -->
+ 
+  </div>
+</section>
+ 
+
+<section class="courses-section" id="cursos">
+
+    <div class="courses-header">
+        <div class="eyebrow">
+            <span class="eyebrow__dot"></span>
+            <span class="eyebrow__text">PROGRAMAS DE ENTRENAMIENTO</span>
+        </div>
+
+        <h2 class="courses__title">NUESTROS <span class="courses__title--accent">CURSOS</span></h2>
+
+        <p>
+            Cuatro disciplinas, un mismo objetivo:
+            llevar tu rendimiento al límite.
+        </p>
+    </div>
+
+    <div class="courses-grid">
+
+        <!-- CARD 01 -->
+        <div class="course-item">
+            <article class="course-card reveal">
+                <div class="card-inner">
+
+                    <div class="card-front">
+                        <div class="course-image">
+                            <img src="assets/img/img14.png" alt="">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="course-number">01</div>
+                        <div class="course-content">
+                            <h3>SIMULADOR F1</h3>
+                            <span>Open Wheel</span>
+                        </div>
+                    </div>
+
+                    <div class="card-back">
+                        <div class="telemetry"></div>
+                        <div class="back-content">
+
+                            <div class="spec">
+                                <span>DURACIÓN</span>
+                                <strong>12 semanas</strong>
+                                <div class="spec-bar-track">
+                                    <div class="spec-bar-fill" style="width: 100%"></div>
+                                </div>
+                            </div>
+
+                            <div class="spec">
+                                <span>NIVEL</span>
+                                <div class="spec-dots">
+                                    <div class="spec-dot active"></div>
+                                    <div class="spec-dot active"></div>
+                                    <div class="spec-dot active"></div>
+                                    <div class="spec-dot"></div>
+                                    <div class="spec-dot"></div>
+                                </div>
+                                <span class="spec-level-label">Inicial a avanzado</span>
+                            </div>
+
+                            <div class="spec">
+                                <span>MODALIDAD</span>
+                                <div class="spec-tag">
+                                    <div class="spec-tag-dot"></div>
+                                    <span>Presencial</span>
+                                </div>
+                            </div>
+
+                            <p>Programa diseñado para desarrollar técnica, consistencia y comprensión avanzada del vehículo.</p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+            <a href="formula1.html" class="course-link">Ver programa →</a>
+        </div>
+
+        <!-- CARD 02 -->
+        <div class="course-item">
+            <article class="course-card reveal">
+                <div class="card-inner">
+
+                    <div class="card-front">
+                        <div class="course-image">
+                            <img src="assets/img/img12.png" alt="">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="course-number">02</div>
+                        <div class="course-content">
+                            <h3>SIMULADOR GT - TC</h3>
+                            <span>Turismo y GT</span>
+                        </div>
+                    </div>
+
+                    <div class="card-back">
+                        <div class="telemetry"></div>
+                        <div class="back-content">
+
+                            <div class="spec">
+                                <span>DURACIÓN</span>
+                                <strong>12 semanas</strong>
+                                <div class="spec-bar-track">
+                                    <div class="spec-bar-fill" style="width: 100%"></div>
+                                </div>
+                            </div>
+
+                            <div class="spec">
+                                <span>NIVEL</span>
+                                <div class="spec-dots">
+                                    <div class="spec-dot active"></div>
+                                    <div class="spec-dot active"></div>
+                                    <div class="spec-dot active"></div>
+                                    <div class="spec-dot"></div>
+                                    <div class="spec-dot"></div>
+                                </div>
+                                <span class="spec-level-label">Intermedio</span>
+                            </div>
+
+                            <div class="spec">
+                                <span>MODALIDAD</span>
+                                <div class="spec-tag">
+                                    <div class="spec-tag-dot"></div>
+                                    <span>Presencial</span>
+                                </div>
+                            </div>
+
+                            <p>Entrenamiento enfocado en vehículos de turismo y carreras de larga duración.</p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+            <a href="#curso-gt" class="course-link">Ver programa →</a>
+        </div>
+
+        <!-- CARD 03 -->
+        <div class="course-item">
+            <article class="course-card reveal">
+                <div class="card-inner">
+
+                    <div class="card-front">
+                        <div class="course-image">
+                            <img src="assets/img/img13.png" alt="">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="course-number">03</div>
+                        <div class="course-content">
+                            <h3>SIMULADOR RALLY</h3>
+                            <span>Off Road</span>
+                        </div>
+                    </div>
+
+                    <div class="card-back">
+                        <div class="telemetry"></div>
+                        <div class="back-content">
+
+                            <div class="spec">
+                                <span>DURACIÓN</span>
+                                <strong>10 semanas</strong>
+                                <div class="spec-bar-track">
+                                    <div class="spec-bar-fill" style="width: 83%"></div>
+                                </div>
+                            </div>
+
+                            <div class="spec">
+                                <span>NIVEL</span>
+                                <div class="spec-dots">
+                                    <div class="spec-dot active"></div>
+                                    <div class="spec-dot active"></div>
+                                    <div class="spec-dot active"></div>
+                                    <div class="spec-dot active"></div>
+                                    <div class="spec-dot"></div>
+                                </div>
+                                <span class="spec-level-label">Todos los niveles</span>
+                            </div>
+
+                            <div class="spec">
+                                <span>MODALIDAD</span>
+                                <div class="spec-tag">
+                                    <div class="spec-tag-dot"></div>
+                                    <span>Presencial</span>
+                                </div>
+                            </div>
+
+                            <p>Control del vehículo, lectura de terreno y técnicas avanzadas de rally.</p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+            <a href="#curso-rally" class="course-link">Ver programa →</a>
+        </div>
+
+        <!-- CARD 04 -->
+        <div class="course-item">
+            <article class="course-card reveal">
+                <div class="card-inner">
+
+                    <div class="card-front">
+                        <div class="course-image">
+                            <img src="assets/img/img11.png" alt="">
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="course-number">04</div>
+                        <div class="course-content">
+                            <h3>SIMULADOR KARTING</h3>
+                            <span>Junior Program</span>
+                        </div>
+                    </div>
+
+                    <div class="card-back">
+                        <div class="telemetry"></div>
+                        <div class="back-content">
+
+                            <div class="spec">
+                                <span>DURACIÓN</span>
+                                <strong>8 semanas</strong>
+                                <div class="spec-bar-track">
+                                    <div class="spec-bar-fill" style="width: 67%"></div>
+                                </div>
+                            </div>
+
+                            <div class="spec">
+                                <span>NIVEL</span>
+                                <div class="spec-dots">
+                                    <div class="spec-dot active"></div>
+                                    <div class="spec-dot active"></div>
+                                    <div class="spec-dot"></div>
+                                    <div class="spec-dot"></div>
+                                    <div class="spec-dot"></div>
+                                </div>
+                                <span class="spec-level-label">Junior</span>
+                            </div>
+
+                            <div class="spec">
+                                <span>MODALIDAD</span>
+                                <div class="spec-tag">
+                                    <div class="spec-tag-dot"></div>
+                                    <span>Presencial</span>
+                                </div>
+                            </div>
+
+                            <p>Introducción competitiva al automovilismo para jóvenes pilotos.</p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+            <a href="#curso-karting" class="course-link">Ver programa →</a>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="circuits" id="circuitos" aria-label="Circuitos de entrenamiento">
+ 
+  <div class="circuits__bg" aria-hidden="true">
+    <div class="circuits__bg-img active" style="background-image:url('circuit-monza-bg.jpg')"></div>
+    <div class="circuits__bg-img" style="background-image:url('circuit-spa-bg.jpg')"></div>
+    <div class="circuits__bg-img" style="background-image:url('circuit-silverstone-bg.jpg')"></div>
+    <div class="circuits__bg-img" style="background-image:url('circuit-interlagos-bg.jpg')"></div>
+    <div class="circuits__bg-overlay"></div>
+  </div>
+ 
+  <div class="circuits__container">
+ 
+    <div class="circuits__header">
+      <div class="circuits__eyebrow">
+        <span class="circuits__eyebrow-square" aria-hidden="true"></span>
+        <span class="circuits__eyebrow-text">Entornos de Competición</span>
+      </div>
+      <h2 class="circuits__title">Entrená en los circuitos<br><span class="circuits__title--accent">más exigentes</span></h2>
+      <p class="circuits__desc">Entrená en circuitos y categorías que replican los desafíos del automovilismo profesional, desde el karting hasta las competencias de alto rendimiento.</p>
+    </div>
+ 
+    <div class="circuits__stage">
+ 
+      <button class="circuits__arrow circuits__arrow--prev" id="btnPrev" aria-label="Circuito anterior">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <polyline points="20,6 10,16 20,26" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"/>
+        </svg>
+      </button>
+ 
+      <div class="circuits__info">
+        <div class="circuits__name-clip" aria-live="polite" aria-atomic="true">
+          <div class="circuits__stripe" aria-hidden="true"></div>
+          <div class="circuits__name-wrap">
+            <h3 class="circuits__name active" data-slide="0">Monza</h3>
+            <h3 class="circuits__name" data-slide="1">Spa</h3>
+            <h3 class="circuits__name" data-slide="2">Silverstone</h3>
+            <h3 class="circuits__name" data-slide="3">Sao Paulo</h3>
+          </div>
+        </div>
+ 
+        <div class="circuits__data">
+          <p class="circuits__country">/ <strong id="meta-country">Italia</strong></p>
+          <p class="circuits__official" id="meta-official">Autodromo Nazionale Monza</p>
+        </div>
+ 
+        <p class="circuits__hint">Tocá un punto del trazado para ver el detalle de cada curva.</p>
+      </div>
+ 
+      <!-- TRAZADO CON HOTSPOTS -->
+      <div class="circuits__track-wrap">
+        <div class="circuits__track-images">
+ 
+          <!-- Tarjeta flotante: la posiciona y la llena JS al tocar un hotspot -->
+          <div class="circuits__hotspot-card" id="hotspotCard" role="status" aria-live="polite"></div>
+ 
+          <!-- MONZA -->
+          <div class="circuits__track-slot active" data-track="0">
+            <svg class="circuits__track-img active" viewBox="0 0 6331 3305" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Trazado de Monza">
+              <path class="circuit-path" fill-rule="evenodd" d="M91,353L80,459L403,1318L512,1362L653,2210L750,2623L856,2821L954,2945L1086,3054L1237,3133L1475,3198L1788,3217L2027,3204L2357,3111L2377,3173L2431,3201L5229,3223L5732,3151L5942,3089L6108,2992L6214,2833L6251,2690L6226,2556L6135,2446L6011,2397L3562,2346L3381,2330L3290,2241L3183,2195L3072,2184L2940,2199L2290,1595L1704,1019L1536,813L1095,158L1043,108L921,81L338,187L175,254Z M185,372L235,323L417,263L931,172L996,189L1442,841L1615,1059L2209,1646L2833,2238L2892,2277L2955,2290L3079,2274L3171,2284L3237,2315L3334,2404L3407,2428L5991,2483L6082,2523L6151,2610L6158,2695L6126,2808L6035,2937L5925,3003L5664,3071L5153,3137L2457,3111L2426,3035L2383,3017L1998,3115L1752,3124L1494,3109L1266,3049L1131,2978L1015,2880L933,2773L836,2589L749,2222L599,1327L569,1292L481,1249L205,557L177,445Z"/>
+ 
+              <g class="hotspot" tabindex="0" role="button" data-name="Prima Variante" data-speed="350 km/h" data-brake="−4.5G" data-type="Chicane">
+                <circle class="hotspot__pulse" cx="357" cy="270" r="80"/>
+                <circle class="hotspot__dot"   cx="357" cy="270" r="46"/>
+              </g>
+              <g class="hotspot" tabindex="0" role="button" data-name="Variante della Roggia" data-speed="290 km/h" data-brake="−3.8G" data-type="Chicane">
+                <circle class="hotspot__pulse" cx="457" cy="1340" r="80"/>
+                <circle class="hotspot__dot"   cx="457" cy="1340" r="46"/>
+              </g>
+              <g class="hotspot" tabindex="0" role="button" data-name="Lesmo 1 y 2" data-speed="220 km/h" data-brake="−3.2G" data-type="Curva rápida doble">
+                <circle class="hotspot__pulse" cx="2076" cy="3184" r="80"/>
+                <circle class="hotspot__dot"   cx="2076" cy="3184" r="46"/>
+              </g>
+              <g class="hotspot" tabindex="0" role="button" data-name="Variante Ascari" data-speed="110 km/h" data-brake="−4.6G" data-type="Chicane">
+                <circle class="hotspot__pulse" cx="3236" cy="2218" r="80"/>
+                <circle class="hotspot__dot"   cx="3236" cy="2218" r="46"/>
+              </g>
+              <g class="hotspot" tabindex="0" role="button" data-name="Parabolica" data-speed="80 km/h" data-brake="−5.1G" data-type="Horquilla">
+                <circle class="hotspot__pulse" cx="6148" cy="2832" r="80"/>
+                <circle class="hotspot__dot"   cx="6148" cy="2832" r="46"/>
+              </g>
+            </svg>
+          </div>
+ 
+          <!-- SPA-FRANCORCHAMPS -->
+          <div class="circuits__track-slot" data-track="1">
+            <svg class="circuits__track-img" viewBox="0 0 5672 3660" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Trazado de Spa-Francorchamps">
+              <path class="circuit-path" fill-rule="evenodd" d="M5581,879L4999,168L4860,138L4567,227L4430,109L4341,80L4262,92L2352,811L2215,883L1614,1332L1346,1417L1226,1497L1109,1698L549,2254L377,2462L296,2604L90,3089L89,3186L150,3246L241,3239L1425,2425L1447,2514L1523,2557L2031,2478L2243,2422L2856,2141L2937,2129L3405,2287L3623,2420L4096,3092L4472,3414L4597,3484L4862,3571L4967,3579L5095,3550L5219,3457L5383,3195L5427,3069L5400,2962L5346,2904L4911,2657L4832,2587L4814,2509L4872,2359L4885,2249L4859,2156L4785,2069L4679,2017L3870,1765L3784,1708L3684,1555L3674,1287L3714,1205L3782,1157L4499,963L4948,778L5013,792L5257,1104L5348,1148L5443,1141L5533,1079L5587,982Z M5495,912L5494,969L5445,1035L5350,1053L5300,1016L5074,722L5005,687L4930,687L4465,877L3740,1074L3641,1148L3584,1269L3599,1588L3656,1704L3761,1810L3851,1856L4671,2112L4765,2180L4794,2276L4723,2498L4749,2629L4848,2727L5292,2978L5333,3039L5326,3102L5137,3410L5059,3465L4960,3487L4872,3478L4661,3410L4497,3319L4156,3020L3760,2434L3678,2345L3446,2204L2937,2037L2826,2054L2244,2322L2058,2379L1534,2465L1511,2338L1469,2311L1425,2314L197,3158L174,3145L341,2728L489,2463L1170,1769L1291,1565L1381,1502L1663,1411L2271,957L2383,898L4341,173L4397,199L4486,291L4559,319L4863,231L4948,246Z"/>
+ 
+              <g class="hotspot" tabindex="0" role="button" data-name="La Source" data-speed="85 km/h" data-brake="−4.8G" data-type="Horquilla">
+                <circle class="hotspot__pulse" cx="142" cy="3190" r="80"/>
+                <circle class="hotspot__dot"   cx="142" cy="3190" r="46"/>
+              </g>
+              <g class="hotspot" tabindex="0" role="button" data-name="Eau Rouge" data-speed="290 km/h" data-brake="Sin frenada" data-type="Curva ciega">
+                <circle class="hotspot__pulse" cx="1226" cy="1497" r="80"/>
+                <circle class="hotspot__dot"   cx="1226" cy="1497" r="46"/>
+              </g>
+              <g class="hotspot" tabindex="0" role="button" data-name="Raidillon" data-speed="310 km/h" data-brake="Sin frenada" data-type="Subida plena">
+                <circle class="hotspot__pulse" cx="1614" cy="1332" r="80"/>
+                <circle class="hotspot__dot"   cx="1614" cy="1332" r="46"/>
+              </g>
+              <g class="hotspot" tabindex="0" role="button" data-name="Pouhon" data-speed="265 km/h" data-brake="−2.9G" data-type="Curva rápida">
+                <circle class="hotspot__pulse" cx="2896" cy="2135" r="80"/>
+                <circle class="hotspot__dot"   cx="2896" cy="2135" r="46"/>
+              </g>
+              <g class="hotspot" tabindex="0" role="button" data-name="Bus Stop" data-speed="75 km/h" data-brake="−5.2G" data-type="Chicane">
+                <circle class="hotspot__pulse" cx="4878" cy="2304" r="80"/>
+                <circle class="hotspot__dot"   cx="4878" cy="2304" r="46"/>
+              </g>
+            </svg>
+          </div>
+ 
+          <!-- SILVERSTONE -->
+          <div class="circuits__track-slot" data-track="2">
+            <svg class="circuits__track-img" viewBox="0 0 6654 3935" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Trazado de Silverstone">
+              <path class="circuit-path" fill-rule="evenodd" d="M117,905L82,1016L88,1162L288,2581L360,2801L476,2970L662,3122L1310,3412L1447,3400L1548,3331L1598,3213L1585,3081L1539,3004L1437,2927L1072,2900L1012,2792L1037,2656L2398,871L2512,799L2883,805L3078,849L3151,897L3128,937L2768,1078L2721,1133L2711,1201L2749,1302L3189,1797L3286,1971L3307,2122L3284,2592L3348,2774L4905,3844L5038,3852L5213,3815L5454,3634L5523,3535L5539,3435L5501,3358L5393,3253L6119,2556L6454,2347L6528,2259L6569,2152L6567,2007L6518,1873L6456,1799L6306,1697L5348,1218L3934,571L3794,447L3619,180L3452,85L3318,85L3206,115L3018,269L2923,309L2818,309L2355,197L1965,384L1062,491L353,697L222,781Z M214,961L299,862L415,792L1078,602L1993,492L2133,443L2372,309L2774,414L2947,417L3086,358L3239,221L3424,193L3538,256L3702,511L3882,670L5271,1305L6290,1817L6431,1947L6461,2125L6381,2263L5992,2515L5306,3182L5284,3237L5294,3302L5430,3448L5391,3536L5174,3711L4944,3739L3436,2704L3393,2568L3417,2092L3384,1910L3277,1731L2864,1269L2820,1182L3212,1018L3260,936L3253,850L3173,769L2980,709L2714,677L2486,691L2388,731L2315,796L931,2619L900,2726L903,2818L938,2910L1000,2986L1080,3024L1374,3026L1470,3098L1489,3189L1469,3250L1405,3297L1325,3301L708,3019L550,2884L444,2721L403,2587L190,1039Z"/>
+ 
+              <g class="hotspot" tabindex="0" role="button" data-name="Abbey" data-speed="230 km/h" data-brake="−3.0G" data-type="Curva rápida">
+                <circle class="hotspot__pulse" cx="1062" cy="491" r="80"/>
+                <circle class="hotspot__dot"   cx="1062" cy="491" r="46"/>
+              </g>
+              <g class="hotspot" tabindex="0" role="button" data-name="Maggotts / Becketts" data-speed="270 km/h" data-brake="−2.1G" data-type="Eses rápidas">
+                <circle class="hotspot__pulse" cx="3115" cy="873" r="80"/>
+                <circle class="hotspot__dot"   cx="3115" cy="873" r="46"/>
+              </g>
+              <g class="hotspot" tabindex="0" role="button" data-name="Stowe" data-speed="185 km/h" data-brake="−4.2G" data-type="Curva media">
+                <circle class="hotspot__pulse" cx="3286" cy="1971" r="80"/>
+                <circle class="hotspot__dot"   cx="3286" cy="1971" r="46"/>
+              </g>
+              <g class="hotspot" tabindex="0" role="button" data-name="Copse" data-speed="285 km/h" data-brake="Sin frenada" data-type="Curva rápida">
+                <circle class="hotspot__pulse" cx="6105" cy="2429" r="80"/>
+                <circle class="hotspot__dot"   cx="6105" cy="2429" r="46"/>
+              </g>
+              <g class="hotspot" tabindex="0" role="button" data-name="Club" data-speed="195 km/h" data-brake="−3.6G" data-type="Curva media">
+                <circle class="hotspot__pulse" cx="1379" cy="3406" r="80"/>
+                <circle class="hotspot__dot"   cx="1379" cy="3406" r="46"/>
+              </g>
+            </svg>
+          </div>
+ 
+          <!-- SÃO PAULO (INTERLAGOS) -->
+          <div class="circuits__track-slot" data-track="3">
+            <svg class="circuits__track-img" viewBox="0 0 5557 3429" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Trazado de Interlagos">
+              <path class="circuit-path" fill-rule="evenodd" d="M5465,1169L5280,785L5175,631L4864,291L4669,161L4314,80L2932,138L2699,191L2450,297L292,1528L126,1686L81,1865L145,1995L392,2124L440,2188L386,2625L417,2809L487,2980L643,3157L899,3290L1181,3349L4283,3322L4451,3237L4507,3155L4531,3061L4495,2588L4451,2424L4378,2295L4246,2167L4073,2066L2479,1461L2392,1368L2344,1238L2343,1051L2382,878L2466,796L2747,642L3099,521L3165,583L3078,867L3101,1028L3151,1093L3235,1144L3430,1161L3592,1046L3875,590L4150,414L4284,378L4336,462L4056,899L4000,1041L3999,1271L4063,1465L4178,1598L4339,1689L5225,1953L5352,1915L5440,1753L5474,1445Z M5374,1220L5354,1666L5301,1820L5260,1852L4449,1621L4230,1509L4116,1335L4095,1082L4144,950L4436,469L4392,337L4286,275L4102,325L3799,522L3524,968L3399,1064L3269,1048L3187,974L3180,867L3264,571L3227,488L3117,421L3000,432L2686,559L2400,718L2297,823L2244,1026L2244,1251L2301,1413L2407,1533L2527,1601L3971,2132L4162,2232L4289,2346L4353,2452L4396,2608L4430,3056L4367,3176L4234,3226L1179,3246L933,3194L718,3086L573,2926L510,2765L486,2604L498,2434L548,2247L535,2153L472,2057L222,1925L182,1858L220,1728L372,1599L2516,377L2751,281L2978,234L4301,181L4457,200L4639,259L4797,368L5092,691L5169,797Z"/>
+ 
+              <g class="hotspot" tabindex="0" role="button" data-name="Curva 1" data-speed="120 km/h" data-brake="−4.9G" data-type="Horquilla">
+                <circle class="hotspot__pulse" cx="206" cy="1995" r="80"/>
+                <circle class="hotspot__dot"   cx="206" cy="1995" r="46"/>
+              </g>
+              <g class="hotspot" tabindex="0" role="button" data-name="Junção" data-speed="145 km/h" data-brake="−4.1G" data-type="Curva lenta">
+                <circle class="hotspot__pulse" cx="4284" cy="378" r="80"/>
+                <circle class="hotspot__dot"   cx="4284" cy="378" r="46"/>
+              </g>
+              <g class="hotspot" tabindex="0" role="button" data-name="Esses" data-speed="240 km/h" data-brake="Sin frenada" data-type="Eses rápidas">
+                <circle class="hotspot__pulse" cx="3151" cy="1093" r="80"/>
+                <circle class="hotspot__dot"   cx="3151" cy="1093" r="46"/>
+              </g>
+              <g class="hotspot" tabindex="0" role="button" data-name="Mergulho" data-speed="175 km/h" data-brake="−3.5G" data-type="Bajada ciega">
+                <circle class="hotspot__pulse" cx="4441" cy="2436" r="80"/>
+                <circle class="hotspot__dot"   cx="4441" cy="2436" r="46"/>
+              </g>
+              <g class="hotspot" tabindex="0" role="button" data-name="Curva do Sol" data-speed="195 km/h" data-brake="−2.8G" data-type="Curva media">
+                <circle class="hotspot__pulse" cx="5465" cy="1169" r="80"/>
+                <circle class="hotspot__dot"   cx="5465" cy="1169" r="46"/>
+              </g>
+            </svg>
+          </div>
+ 
+        </div>
+      </div>
+ 
+      <button class="circuits__arrow circuits__arrow--next" id="btnNext" aria-label="Circuito siguiente">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <polyline points="12,6 22,16 12,26" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"/>
+        </svg>
+      </button>
+ 
+    </div>
+ 
+    <div class="circuits__indicators" role="tablist" aria-label="Seleccionar circuito">
+      <button class="circuits__dot active" role="tab" aria-selected="true"  data-index="0" aria-label="Monza"></button>
+      <button class="circuits__dot"        role="tab" aria-selected="false" data-index="1" aria-label="Spa-Francorchamps"></button>
+      <button class="circuits__dot"        role="tab" aria-selected="false" data-index="2" aria-label="Silverstone"></button>
+      <button class="circuits__dot"        role="tab" aria-selected="false" data-index="3" aria-label="São Paulo"></button>
+    </div>
+ 
+  </div>
+</section>
+
+  <section class="testimonials" id="testimonios" aria-label="Experiencias Apex">
+
+<div class="testimonials__container">
+
+<!-- Header -->
+<div class="testimonials__header">
+
+  <div class="testimonials__eyebrow">
+    <span class="testimonials__eyebrow-square"></span>
+    <span>Experiencias Apex</span>
+  </div>
+
+ <h2 class="testimonials__title">
+  LO QUE DICEN<br>
+  <span class="testimonials__title--accent">NUESTROS PILOTOS</span>
+</h2>
+
+  <p class="testimonials__desc">
+    Cada piloto vive un proceso diferente. Lo que comparten es una misma búsqueda:
+    mejorar, entender el rendimiento y evolucionar vuelta tras vuelta.
+  </p>
+
+</div>
+
+<!-- Carrusel -->
+<div class="testimonials__carousel">
+
+  <!-- Flecha izquierda -->
+  <button
+    class="testimonials__arrow testimonials__arrow--prev"
+    aria-label="Testimonio anterior"
+  >
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+      <polyline
+        points="20,6 10,16 20,26"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="square"
+      />
+    </svg>
+  </button>
+
+  <!-- Track -->
+  <div class="testimonials__viewport">
+
+    <div class="testimonials__track">
+
+      <!-- CARD 1 -->
+      <article class="testimonial-card active" data-index="0">
+
+        <div class="testimonial-card__image-wrap">
+          <img
+            src="assets/img/testimonio1.png"
+            alt="Valentina"
+            class="testimonial-card__image"
+          >
+        </div>
+
+        <div class="testimonial-card__overlay">
+
+          <p class="testimonial-card__quote">
+            “Aprendí a entender cada vuelta desde otro lugar.”
+          </p>
+
+          <div class="testimonial-card__footer">
+
+            <div class="testimonial-card__info">
+              <h3 class="testimonial-card__name">
+                JUAN
+              </h3>
+
+              <p class="testimonial-card__role">
+                Piloto F1
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+      <!-- CARD 2 -->
+      <article class="testimonial-card" data-index="1">
+
+        <div class="testimonial-card__image-wrap">
+          <img
+            src="assets/img/testimonio2.png"
+            alt="Franco"
+            class="testimonial-card__image"
+          >
+        </div>
+
+        <div class="testimonial-card__overlay">
+
+          <p class="testimonial-card__quote">
+            “La telemetría me permitió encontrar errores que no veía.”
+          </p>
+
+          <div class="testimonial-card__footer">
+
+            <div class="testimonial-card__info">
+              <h3 class="testimonial-card__name">
+                FRANCO
+              </h3>
+
+              <p class="testimonial-card__role">
+                Piloto GT
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+      <!-- CARD 3 -->
+      <article class="testimonial-card" data-index="2">
+
+        <div class="testimonial-card__image-wrap">
+          <img
+            src="assets/img/testimonio6.png"
+            alt="Simón"
+            class="testimonial-card__image"
+          >
+        </div>
+
+        <div class="testimonial-card__overlay">
+
+         <p class="testimonial-card__quote">
+  “Ahora entiendo dónde pierdo <br class="testimonial-card__break">tiempo y cómo recuperarlo.”
+</p>
+
+          <div class="testimonial-card__footer">
+
+            <div class="testimonial-card__info">
+              <h3 class="testimonial-card__name">
+                SIMÓN
+              </h3>
+
+              <p class="testimonial-card__role">
+                Piloto Rally
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+      <!-- CARD 4 -->
+      <article class="testimonial-card" data-index="3">
+
+        <div class="testimonial-card__image-wrap">
+          <img
+            src="assets/img/testimonio4.png"
+            alt="Tomás"
+            class="testimonial-card__image"
+          >
+        </div>
+
+        <div class="testimonial-card__overlay">
+
+          <p class="testimonial-card__quote">
+            “Cada sesión me ayudó a mejorar mi confianza en pista.”
+          </p>
+
+          <div class="testimonial-card__footer">
+
+            <div class="testimonial-card__info">
+              <h3 class="testimonial-card__name">
+                TOMÁS
+              </h3>
+
+              <p class="testimonial-card__role">
+                Piloto Karting
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+  <!-- Flecha derecha -->
+  <button
+    class="testimonials__arrow testimonials__arrow--next"
+    aria-label="Testimonio siguiente"
+  >
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+      <polyline
+        points="12,6 22,16 12,26"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="square"
+      />
+    </svg>
+  </button>
+
+</div>
+
+<!-- Indicadores -->
+<div class="testimonials__indicators">
+
+  <button
+    class="testimonials__dot active"
+    data-index="0"
+    aria-label="Valentina"
+  ></button>
+
+  <button
+    class="testimonials__dot"
+    data-index="1"
+    aria-label="Franco"
+  ></button>
+
+  <button
+    class="testimonials__dot"
+    data-index="2"
+    aria-label="Simón"
+  ></button>
+
+  <button
+    class="testimonials__dot"
+    data-index="3"
+    aria-label="Tomás"
+  ></button>
+
+</div>
+
+</div>
+
+<section class="stats" id="rendimiento-datos">
+  <div class="stats__container">
+ 
+    <div class="stats__header">
+      <div class="stats__eyebrow">
+        <span class="stats__eyebrow-square"></span>
+        <span class="stats__eyebrow-text">PROGRAMA CON RENDIMIENTO</span>
+      </div>
+ 
+     <h2 class="stats__title">
+        EL CAMINO HACIA<br>
+        <span class="stats__title--accent">EL RITMO PRO</span>
+      </h2>
+ 
+      <p class="stats__desc">
+        Diseñamos un plan de entrenamiento estructurado para que cada piloto acumule las horas y los datos necesarios para resetear sus límites en pista.
+      </p>
+    </div>
+ 
+    <div class="stats__grid">
+ 
+      <article class="stats__card">
+        <div class="stats__card-top">
+          <span class="stats__stripe" aria-hidden="true"></span>
+          <span class="stats__number" data-count-to="120">+120</span>
+        </div>
+        <span class="stats__label">HORAS</span>
+      </article>
+ 
+      <article class="stats__card">
+        <div class="stats__card-top">
+          <span class="stats__stripe" aria-hidden="true"></span>
+          <span class="stats__number" data-count-to="350">+350</span>
+        </div>
+        <span class="stats__label">LAPS</span>
+      </article>
+ 
+      <article class="stats__card">
+        <div class="stats__card-top">
+          <span class="stats__stripe" aria-hidden="true"></span>
+          <span class="stats__number" data-count-to="25">+25</span>
+        </div>
+        <span class="stats__label">PILOTOS</span>
+      </article>
+ 
+      <article class="stats__card">
+        <div class="stats__card-top">
+          <span class="stats__stripe" aria-hidden="true"></span>
+          <span class="stats__number" data-count-to="5">+5</span>
+        </div>
+        <span class="stats__label">CIRCUITOS</span>
+      </article>
+ 
+    </div>
+  </div>
+<footer class="footer">
+  <div class="footer__container" id="contacto"></div>
+ 
+    <div class="footer__top">
+ 
+      <!-- Marca + coordenadas -->
+      <div class="footer__brand">
+        <a href="#" class="footer__logo">APEX</a>
+        <div class="footer__coords">
+          <p>34°41' S / 58°27' W</p>
+          <p>BUENOS AIRES, ARG</p>
+        </div>
+      </div>
+ 
+      <!-- Columnas -->
+      <div class="footer__columns">
+ 
+        <!-- Navegación -->
+        <div class="footer__col">
+          <h3 class="footer__col-title">Navegación</h3>
+          <ul class="footer__list">
+            <li><span class="footer__dash">-</span><a href="#que-es-apex">Qué es Apex</a></li>
+            <li><span class="footer__dash">-</span><a href="#evolucion">Evolución</a></li>
+            <li><span class="footer__dash">-</span><a href="#como-entrenamos">Cómo entrenamos</a></li>
+            <li><span class="footer__dash">-</span><a href="#cursos">Cursos</a></li>
+            <li><span class="footer__dash">-</span><a href="#circuitos">Circuitos y categorías</a></li>
+            <li><span class="footer__dash">-</span><a href="#testimonios">Testimonios</a></li>
+            <li><span class="footer__dash">-</span><a href="#estadisticas">Estadísticas</a></li>
+          </ul>
+        </div>
+ 
+        <!-- Contacto -->
+        <div class="footer__col">
+          <h3 class="footer__col-title">Contacto</h3>
+          <ul class="footer__list">
+            <li>
+              <span class="footer__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6.6 3.2h2.7l1.4 3.6-1.8 1.4a10.6 10.6 0 0 0 5 5l1.4-1.8 3.6 1.4v2.7a1.9 1.9 0 0 1-2 1.9C9.8 16.9 4.1 11.2 3.6 6a1.9 1.9 0 0 1 1.9-2Z"/>
+                </svg>
+              </span>
+              <a href="tel:01145458596">011 45458596</a>
+            </li>
+            <li>
+              <span class="footer__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 21s-7-7.4-7-12a7 7 0 1 1 14 0c0 4.6-7 12-7 12Z"/>
+                  <circle cx="12" cy="9" r="2.3"/>
+                </svg>
+              </span>
+              <span class="footer__text">Colegiales, CABA</span>
+            </li>
+            <li>
+              <span class="footer__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="5" width="18" height="14" rx="2.2"/>
+                  <path d="M4 7.2 12 13l8-5.8"/>
+                </svg>
+              </span>
+              <a href="mailto:apex@gmail.com">apex@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+ 
+        <!-- Redes sociales -->
+        <div class="footer__col">
+          <h3 class="footer__col-title">Redes sociales</h3>
+          <ul class="footer__list">
+            <li>
+              <span class="footer__icon footer__icon--badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="4" width="16" height="16" rx="5"/>
+                  <circle cx="12" cy="12" r="3.6"/>
+                  <circle cx="16.3" cy="7.7" r="0.55" fill="currentColor" stroke="none"/>
+                </svg>
+              </span>
+              <a href="#" target="_blank" rel="noopener">@ApexSimRacing</a>
+            </li>
+            <li>
+              <span class="footer__icon footer__icon--badge" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor" stroke="none">
+                  <path d="M13.6 8.4h-1.3c-.6 0-.9.3-.9.9v1.3h2.2l-.3 2h-1.9V19h-2.1v-6.4H7.6v-2h1.7V9.1c0-1.7 1-2.9 2.8-2.9h1.5v2.2Z"/>
+                </svg>
+              </span>
+              <a href="#" target="_blank" rel="noopener">Apex Sim Racing</a>
+            </li>
+          </ul>
+        </div>
+ 
+      </div>
+    </div>
+ 
+    <div class="footer__bottom">
+      <p class="footer__copyright">© <span id="footer-year">2026</span> Apex Sim-Racing Academy</p>
+    </div>
+ 
+  </div>
+</footer>
+
+ 
+<script src="script.js"></script>
+</body>
+</html>
